@@ -1,0 +1,114 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: rgba(22, 27, 34, 0.85);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 14px 16px;
+    margin-top: 10px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+    transition: all 0.25s ease-in-out;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.avatarContainer {
+    position: relative;
+    width: 44px;
+    height: 44px;
+    flex-shrink: 0;
+}
+
+.avatar {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #5b8baf;
+    box-shadow: 0 0 10px rgba(91, 139, 175, 0.4);
+}
+
+.statusBadge {
+    position: absolute;
+    bottom: -2px;
+    right: -2px;
+    background: #1baaa6;
+    color: #ffffff;
+    font-size: 8px;
+    font-weight: 700;
+    padding: 2px 4px;
+    border-radius: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border: 1.5px solid #161b22;
+}
+
+.titleArea {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    flex-grow: 1;
+}
+
+.coachLabel {
+    font-size: 11px;
+    font-weight: 600;
+    color: #5b8baf;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+}
+
+.moveTitle {
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.speechBubble {
+    position: relative;
+    background: rgba(35, 42, 54, 0.9);
+    border-radius: 8px;
+    padding: 10px 12px;
+    border-left: 3px solid #5b8baf;
+    color: #e6edf3;
+    font-size: 13px;
+    line-height: 1.45;
+}
+
+.speechBubbleText {
+    margin: 0;
+}
+
+.alternativeAction {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 8px;
+    padding: 6px 12px;
+    background: rgba(91, 139, 175, 0.15);
+    border: 1px solid rgba(91, 139, 175, 0.35);
+    border-radius: 6px;
+    color: #79c0ff;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.alternativeAction:hover {
+    background: rgba(91, 139, 175, 0.3);
+    border-color: #79c0ff;
+    color: #ffffff;
+    transform: translateY(-1px);
+}
+
+.alternativeMoveBtn {
+    text-decoration: underline;
+    font-weight: 700;
+}

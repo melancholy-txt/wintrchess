@@ -27,6 +27,9 @@ const settingsSchema = z.object({
                 theory: z.boolean()
             })
         }),
+        coach: z.object({
+            enabled: z.boolean()
+        }),
         simpleNotation: z.boolean()
     }),
     themes: z.object({
@@ -61,6 +64,9 @@ export const defaultSettings: Settings = {
                 critical: true,
                 theory: true
             }
+        },
+        coach: {
+            enabled: true
         },
         simpleNotation: false
     },

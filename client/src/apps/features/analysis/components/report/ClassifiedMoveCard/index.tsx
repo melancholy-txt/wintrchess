@@ -23,6 +23,7 @@ import useAnalysisBoardStore from "@analysis/stores/AnalysisBoardStore";
 import useAnalysisProgressStore from "@analysis/stores/AnalysisProgressStore";
 import LogMessage from "@/components/common/LogMessage";
 import playBoardSound from "@/lib/boardSounds";
+import CoachCard from "@analysis/components/report/CoachCard";
 
 import * as styles from "./ClassifiedMoveCard.module.css";
 
@@ -177,6 +178,8 @@ function ClassifiedMoveCard() {
                 {nearestOpeningName}
             </div>
         }
+
+        <CoachCard node={node} />
     </div>;
 }
 

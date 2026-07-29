@@ -40,6 +40,33 @@ function OtherOptionsArea() {
                 )}
             />
         </div>
+
+        <div className={styles.setting}>
+            <span data-tooltip-id="settings-other-coach">
+                {t("settings.other.coach")}
+            </span>
+
+            <Tooltip
+                id="settings-other-coach"
+                delayShow={500}
+                className={styles.settingDescription}
+            >
+                {t("settings.other.descriptions.coach")}
+            </Tooltip>
+
+            <SwitchSetting
+                defaultChecked={settings.analysis.coach?.enabled ?? true}
+                onChange={checked => (
+                    setSettings(draft => {
+                        if (!draft.analysis.coach) {
+                            draft.analysis.coach = { enabled: true };
+                        }
+                        draft.analysis.coach.enabled = checked;
+                        return draft;
+                    })
+                )}
+            />
+        </div>
     </>;
 }
 

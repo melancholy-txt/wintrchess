@@ -42,8 +42,10 @@
         "other": {
             "title": "Other",
             "simpleNotation": "Simple Move Notation",
+            "coach": "Chess Coach",
             "descriptions": {
-                "simpleNotation": "Show simple descriptions of Chess moves instead of standard notation. Example: Kxf4 -> King on e3 takes f4"
+                "simpleNotation": "Show simple descriptions of Chess moves instead of standard notation. Example: Kxf4 -> King on e3 takes f4",
+                "coach": "Show AI Grandmaster Coach explanations and insights for every move."
             }
         }
     },
